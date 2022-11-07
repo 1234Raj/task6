@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding :0;
+    
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b1e31;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.container{
+    max-width: 500px;
+    width: 75%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.container .content .Matrix .max-width .btn{
+    padding: 10px 20px;
+    margin: 5px 10px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+.container h1:hover{
+    border: 1px solid crimson;
+    padding: 5px 10px;
+    border-radius:2px ;
+    background: yellow;
+    color: white;
+    border: none;
+
+}
+.container .btn{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    box-shadow: -1px 1px 0px crimson,
+    -2px 2px 0px crimson,
+    -3px 3px 0px crimson,
+    -4px 4px 0px crimson,
+    -5px 5px 0px crimson,
+    -6px 6px 0px crimson;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+    animation: animate 4s linear infinite;
+ }
+ .container .btn:focus{
+outline: none;
+ }
+@keyframes animate{
+    0%{
+        transform: rotateX('-30deg' ) rotateY('0deg');
+    }
+    100%{
+        transform: rotateX('-30deg' ) rotateY('360deg');
+    }
+}
+ .container .btn:hover{
+    background: #000;
+    transition: all 3s ease;
+    transform: rotate(120deg);
+    
+ }
